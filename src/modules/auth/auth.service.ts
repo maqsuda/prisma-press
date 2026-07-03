@@ -65,7 +65,7 @@ const refreshToken = async (refreshToken: string) => {
     refreshToken,
     config.jwt_refresh_secret,
   );
-  console.log("Refresh token",verifiedRefreshToken);
+  // console.log("Refresh token",verifiedRefreshToken);
 
   if (!verifiedRefreshToken.success) {
     throw new Error(verifiedRefreshToken.error);
